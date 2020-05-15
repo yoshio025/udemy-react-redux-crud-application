@@ -1,4 +1,4 @@
-import {INCREMENT, DECREMENT} from "../actions"
+import {INCREMENT, DECREMENT, RESET} from "../actions"
 
 const initialState = {value: 0}
 
@@ -9,7 +9,7 @@ export default (state = initialState, action) => {
         case DECREMENT:
             return{value: state.value - 1} 
         default:
-           return state 
+            return state
     }
 }
 
